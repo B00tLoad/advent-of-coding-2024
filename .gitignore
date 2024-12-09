@@ -236,6 +236,6 @@ $RECYCLE.BIN/
 
 ### Advent of Code specific
 
-**/input*.txt
+**/*input*.txt
 **/index.js
 .idea/

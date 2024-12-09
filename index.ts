@@ -112,8 +112,8 @@ async function main(day: string | undefined, part : string | undefined, input: s
   runner(input)
 }
 
-const day = process.argv[2]
-const part = process.argv[3]
-const input = process.argv[4]
+const day = process.argv[2] === undefined ? process.argv[2] : 'Day ' + process.argv[2]
+const part = process.argv[3] === undefined ? process.argv[3] : 'Part ' + process.argv[3]
+const input = process.argv[4] === undefined ? process.argv[4] : `./${day}/` + process.argv[4]
 
 main(day, part, input).then()
