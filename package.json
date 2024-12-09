@@ -1,0 +1,23 @@
+{
+  "name": "advent-of-code-2024",
+  "version": "1.0.0",
+  "description": "My solutions to the 2024 advent of code.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "start:nobuild": "node index.js",
+    "start": "pnpm build && node index.js"
+  },
+  "keywords": ["challenge", "typescript", "advent-of-code", "programming-puzzles", "advent-of-code-2024", "aoc-2024", "advent-of-code-2024-javascript", "advent-of-code-2024-typescript", "aoc-2024-in-typescript"],
+  "author": "b00tload",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.0"
+  }
+}
