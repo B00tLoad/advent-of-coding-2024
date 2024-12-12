@@ -19,16 +19,18 @@ export default function runner(input: string) {
     }
 
     for (let i = 0; i < fsblk.length; i++) {
-      while(fsblk[i] === -1) fsblk[i] = fsblk.pop()??-1
+      while(fsblk[i] === -1) {
+        fsblk[i] = fsblk.pop()??-1
+        if(fsblk.length === i+1) {
+          fsblk.pop()
+          break
+        }
+      }
     }
 
-    // console.log(fsblk)
-
     let checksum = 0;
-
     fsblk.forEach((value, index) => {
       checksum += value*index
-      // console.log(`${value} * ${index} = ${value*index} (total: ${checksum}`)
     })
 
     console.log(checksum)
